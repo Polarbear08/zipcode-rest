@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>郵便番号で住所検索</title>
+</head>
+<body>
+	<h1>郵便番号から住所を検索します</h1>
+	<form method="get" action="result.html" th:action="@{result}">
+		郵便番号(ハイフンなし)：<input type="text" name="zipcode" placeholder="0000000">
+		<input type="submit" value="検索">
+	</form>
+</body>
+</html>
